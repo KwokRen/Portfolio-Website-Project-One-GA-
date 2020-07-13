@@ -1,5 +1,5 @@
 # Project Overview
-
+Building a website using the skills learned from unit one of the course. The website will include different sections that overall display you as a person and the projects you've made. This website will be your portfolio.
 ## Project Schedule
 
 This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
@@ -8,7 +8,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
+|Day 1| Project Description | Complete
 |Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Day 4| MVP & Bug Fixes | Incomplete
@@ -18,51 +18,82 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+This website application I am creating is to help me display skills that I've learned during the first unit of the General Assembly SEI bootcamp. The website features several things such as: 
+-  About Me page 
+-  Projects page
+-  Contacts
+
 
 ## Google Sheet
 
-Include link to your google sheet here.  Here is the sample [Suresh had used in class](https://docs.google.com/spreadsheets/d/1V1M3Eq1NXH2PNmeTlVviRhEjX9kenq769Vo2P5mMtro/edit#gid=0) 
+[Google Sheet](https://docs.google.com/spreadsheets/d/1V1M3Eq1NXH2PNmeTlVviRhEjX9kenq769Vo2P5mMtro/edit#gid=0) 
 
 ## Wireframes
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
 
-- [Mobile](https://git.generalassemb.ly/SEIR-629/project-1-portfolio/blob/master/readme-assets/mobile.png)
-- [Tablet](https://git.generalassemb.ly/SEIR-629/project-1-portfolio/blob/master/readme-assets/nav-highlight.gif)
-- [Desktop](https://git.generalassemb.ly/SEIR-629/project-1-portfolio/blob/master/readme-assets/desktop.png)
+[Mobile Rough Draft](https://res.cloudinary.com/dpggcudix/image/upload/v1594599888/Screen_Shot_2020-07-12_at_8.20.40_PM_x9cho7.png)
 
-Wireframing Resources:
+Using Flexbox, I was able to make a column of divs. I changed the font size based on size of media, and and was able to fit it all within the screen of a iPhone X. It works for a width lower than an iPhone X as well. The hamburger menu will also appear as well for menu scrolling convinience.
 
-- [Mockflow](https://mockflow.com/app/#Wireframe)
-- [Figma](https://www.figma.com/)
+[Tablet Rough Draft](https://res.cloudinary.com/dpggcudix/image/upload/v1594599888/Screen_Shot_2020-07-12_at_8.10.29_PM_ijmz28.png)
+
+Very similar to what I wanted my desktop to look like, it just has some sizing differences between the divs and the banner looks a little more compact which is fine. 
+
+[Desktop Rough Draft](https://res.cloudinary.com/dpggcudix/image/upload/v1594599888/Screen_Shot_2020-07-12_at_8.20.53_PM_gwacil.png)
+
+A navigation bar on top, the middle is a banner, below that are some blocks I did with CSS Grid to go to different pages in the same site. Finally, there is a contact section below that. 
 
 
 ## Time/Priority Matrix 
 
-Include a full list of features that have been [prioritized](https://res.cloudinary.com/doaftkgbv/image/upload/v1583773146/ValueVSComplexity_u2inhx.png) based on the `Time and Priority` Matix.  This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  This line will be used to estimate how much time any one feature will take to complete. 
-
-Now draw a vertical line on the y axis.  The top of this line should have `High` and the bottom `Low`.  This line will be used to assign a priority to to each feature you wish to include in the project.  
-
-Now create a separate list starting with A and assign it one of the features.  Continue to assign each feature a letter.  Once complete add each letter to the matrix assigning based on what your feel it's prioirty is an how long it will take to implement. If any one feature takes longer than 2hrs to complete than break it down into smaller tasks and reassign them a new letter. 
-
-Once complete tally up the time and determine how long the project will take to complete. Now break those features into MVP and PostMVP so you can guarantee you will have a fully functioning project to demo. 
+[Time Matrix](https://res.cloudinary.com/dpggcudix/image/upload/v1594601691/Screen_Shot_2020-07-12_at_8.52.52_PM_ujpvxd.png)
 
 ### MVP/PostMVP - 5min
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+The functionality will then be divided into two separate lists: MVP and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-#### MVP (examples)
+#### MVP
 
-- Pull data using google json api
-- Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
+- Using Google Sheets API
+- Homepage
+	- Navigation Bar
+		- About Me Link
+		- Projects Link
+		- Contacts Link
+		- Icon/Logo
+	- Pictures
+- About Me Page
+	- Navigation Bar
+		- Hamburger Menu as Mobile
+	- Description of myself
+	- Pictures
+	- Skills
+- Projects Page
+	- Navigation bar
+	- Using CSS Grid to display different projects
+	- Link to the Application itself and GitHub
+- Contacts
+	- Same page as homepage
+	- Link will allow you to scroll down
+	- Link to social media platforms
+	- Message Me
+- Linking my blog
+	- Link to blog website
+- Media Responsiveness
+	- Mobile first
+	- Tablet
+	- Desktop
+- Refactor Code (making it readable
 
 #### PostMVP 
 
-- Anything else that is not MVP
-
+- Sliding transitions
+- Consistent color schemes
+- Clean and simple layout
+- Play around with different transitions
+- Work on Hovering over features
+- 
 ## Functional Components
 
 Based on the initial logic defined in the previous sections try and breakdown the logic further into functional components, and by that we mean functions.  Try and capture what logic would need to be defined if the game was broken down into the following categories.
@@ -70,28 +101,29 @@ Based on the initial logic defined in the previous sections try and breakdown th
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
 
 #### MVP
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Hamburger | H | 1hr | 1.5hr | -hr|
-| Project Previews | H | 3hr | -hr | -hr|
-| Regular Nav | H | H | -hr | -hr|
-| Adding Form | H | 1.5hr| -hr | -hr |
-| Other sections and flex| M | 4hr | 2hr | -hr|
-| Working with API | H | 3hrs| 2hr | -hr |
-| Responsive | H | 3hr | -hr | -hr|
+| Homepage | H | 5hr | -hr | -hr|
+| Navigation Bar | H | 2hr | -hr | -hr|
+| Icon | L | 4H | -hr | -hr|
+| Navigation Bar Links | H | 1hr| -hr | -hr |
+| About Me Page| M | 3hr | -hr | -hr|
+| Working with API | H | 4hrs| -hr | -hr |
+| Media Responsive | H | 5hr | -hr | -hr|
 | Social Media Icons | L | 1hr | -hr | -hr|
-| Total | H | 15.5hrs| -hrs | -hrs |
+| Projects Page | M | 3hr | -hr | -hr|
+| Contacts | M | 2hr | -hr | -hr|
+| Total | H | 30hrs| -hrs | -hrs |
 
 #### PostMVP
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Project Hover | L | 3hr | -hr | -hr|
-| Banner letters wiggle | L | 1hr | -hr | -hr|
-| Interactive Banner | M | 4hr | -hr | -hr|
-| Materialize | H | 4hr | -hr | -hr|
-| Bootstrap | H | 4hr | -hr | -hr|
-| Make own icon | L | 4hr | -hr | -hr|
-| Total | H | 20hrs| -hrs | -hrs |
+| Sliding transitions | M | 6hr | -hr | -hr|
+| Consistent color schemes | L | 1hr | -hr | -hr|
+| Clean and Simple Layout | L | 3hr | -hr | -hr|
+| Different Transitions | L | 3hr | -hr | -hr|
+| Hover | M | 3hr | -hr | -hr|
+| Total | H | 16hrs| -hrs | -hrs |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project. 
