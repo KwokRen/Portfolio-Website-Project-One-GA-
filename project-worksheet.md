@@ -85,6 +85,7 @@ The functionality will then be divided into two separate lists: MVP and PostMVP.
 	- Tablet
 	- Desktop
 - Refactor Code (making it readable
+- Deployment
 
 #### PostMVP 
 
@@ -113,7 +114,8 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Social Media Icons | L | 1hr | -hr | -hr|
 | Projects Page | M | 3hr | -hr | -hr|
 | Contacts | M | 2hr | -hr | -hr|
-| Total | H | 30hrs| -hrs | -hrs |
+| Deployment | M | 2hr | -hr | -hr|
+| Total | H | 32hrs| -hrs | -hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
