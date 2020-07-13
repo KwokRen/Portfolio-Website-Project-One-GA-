@@ -8,7 +8,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Complete
+|Day 1| Project Description | Incomplete
 |Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Day 4| MVP & Bug Fixes | Incomplete
@@ -26,7 +26,7 @@ This website application I am creating is to help me display skills that I've le
 
 ## Google Sheet
 
-[Google Sheet](https://docs.google.com/spreadsheets/d/1V1M3Eq1NXH2PNmeTlVviRhEjX9kenq769Vo2P5mMtro/edit#gid=0) 
+[Google Sheet](https://docs.google.com/spreadsheets/d/19e4t4KraAs82HfJFbNtUUlCGuqxu0JTm1UD7AuunRUk/edit?usp=sharing) 
 
 ## Wireframes
 
