@@ -38,3 +38,39 @@
     }
 
 }
+
+@media screen and (max-width: 720px) {
+
+    .profilepic {
+        width: 150px;
+        height: 150px;
+    }
+
+    .intro {
+        font-size: 25px;
+        text-align: right;
+        line-height: 60px;
+    }
+    
+    #name {
+        font-size: 40px;
+    }
+
+    .myinfo {
+        height: 300px;
+    }
+
+    .myinfoimage {
+        width: 100px;
+        height: 100px;
+    }
+
+    .myinfoheader {
+        font-size: 20px;
+    }
+
+    .myinfopara {
+        height: 100px;
+        font-size: 15px;
+    }
+}
