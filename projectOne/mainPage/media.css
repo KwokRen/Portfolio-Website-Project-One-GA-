@@ -75,3 +75,135 @@
         padding: 0 10px 0 10px;
     }
 }
+
+@media screen and (max-width: 599px) {
+
+    .hamburger::before {
+        content: '\2630';
+        font-size: 35px;
+        color: white;
+        position: relative;
+        display: flex;
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+    }
+
+    .rightsidetop {
+        width: 15%;
+        flex-direction: column;
+        position: relative;
+    }
+
+
+    .shown {
+        display: block;
+        position: relative;
+        height: 200px;
+        font-size: 25px;
+    }
+
+    .rightside {
+        display: none;
+    }
+
+    .icon {
+        padding-left: 20px;
+    }
+
+    .herobanner {
+        flex-direction: column;
+        height: 700px;
+        justify-content: center;
+    }
+
+    .leftherobanner, .rightherobanner {
+        width: 100%;
+    }
+
+    .profilepic {
+        height: 200px;
+        width: 200px;
+    }
+
+    .intro {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .myinfo {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .about, .projects, .blog {
+        height: 700px;
+    }
+
+    .myinfoimage {
+        width: 250px;
+        height: 250px;
+    }
+
+    .myinfoheader {
+        font-size: 45px;
+    }
+
+    .myinfopara {
+        height: 200px;
+        font-size: 25px;
+        padding: 0 100px 0 100px;
+    }
+
+    .myinfobutton {
+        margin-bottom: 30px;
+    }
+    
+}   
+
+@media screen and (max-width: 470px) {
+
+    .intro {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    
+    #name {
+        font-size: 50px;
+    }
+
+    .profilepic {
+        height: 150px;
+        width: 150px;
+    }
+
+    .myinfoimage {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 50px;
+    }
+
+    .myinfoheader {
+        font-size: 40px;
+    }
+
+    .myinfopara {
+        font-size: 20px;
+        padding: 0 50px 0 50px;
+        height: 200px;
+    }
+
+
+    .connect {
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    textarea {
+        width: 80%;
+    }
+}
