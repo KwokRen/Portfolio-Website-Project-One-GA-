@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Titillium+Web&display=swap');
+/* 
+
+* {
+    border: 1px solid gold;
+} */
+
+.top {
+    background-color: #19415C;
+}
+
+.navbartop {
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 25px;
+    border-bottom: 5px solid #cccccc;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.iconpic {
+    height: 80px;
+    width: 170px;
+    margin: 12px;
+}
+
+.rightsidetop {
+    display: flex;
+    padding-right: 75px;
+}
+
+.rightside {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.hamburgermenu {
+    height: 0px;
+    width: 100%;
+    background-color: #19415C;
+    color: black;
+    display: none;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.hidden {
+    height: 33.3%;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid #cccccc;
+    color: white;
+}
+
+.hidden > a {
+    color: white;
+}
+
+.desktopshow {
+    padding: 12px;
+}
+
+.desktopshow > a {
+    color: white;
+    text-decoration: none;
+}
+
+.desktopshow:hover {
+    border-radius: 100px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
+    background-color: #dbf5ff;
+  }
+
+
+.aboutbanner {
+    height: 3660px;
+    box-sizing: border-box;
+    background-color: #dbf5ff;
+}
+
+.abovebanner{
+    height: 200px;
+}
+
+.belowbanner {
+    height: 250px;
+}
+
+.aboutname {
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Lato', sans-serif;
+    background-color: #19415C;
+    color: white;
+    padding: 50px 0 50px 0;
+    border-top: 5px solid #cccccc;
+    border-bottom: 5px solid #cccccc;
+}
+
+.aboutmepara {
+    height: 710px;
+    background-color: #19415C;
+    color: white;
+}
+
+.skills {
+    height: 600px;
+}
+
+.skillspic {
+    display: grid;
+    height: 500px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.currentskills {
+    grid-area: 1/1/2/2;
+    border-right: 1px solid #cccccc;
+}
+
+.futureskills {
+    grid-area: 1/2/2/3;
+}
+
+.currentskills > h2, .futureskills > h2 {
+    font-size: 50px;
+    text-align: center;
+    margin: 40px;
+    padding: 30px;
+    border: 5px solid #cccccc;
+    background-color: #19415C;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.imageskills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imageskills > img {
+    margin: 10px;
+}
+
+.aboutmepara > h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 70px;
+    height: 100px;
+    padding-top: 10px;
+    font-family: 'Lato', sans-serif;
+    border-top: 5px solid #cccccc;
+}
+
+
+.skills > h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 70px;
+    height: 100px;
+    background-color: #19415C;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    border-bottom: 5px solid #cccccc;
+    border-top: 5px solid #cccccc;
+}
+
+.beforeinfo {
+    height: 130px;
+    background-color: #dbf5ff;
+}
+
+.aboutmeinfogrid, .interestsgrid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 4fr 6fr;
+    height: 500px;
+}
+
+.missiongrid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 6fr 4fr;
+    height: 500px;
+}
+
+.aboutmepic, .interestspic, .missionpic {
+    justify-self: center;
+    align-self: center;
+    height: 400px;
+    width: 400px;
+    border: 5px solid #cccccc;
+    background-image: url(https://images.fantasypros.com/images/nba/players/1200x1200/2803.jpg) ;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+/* .interestspic {
+    background-image: url(https://images.fantasypros.com/images/nba/players/1200x1200/2803.jpg) ;
+}
+
+.missionpic {
+    background-image: url(https://images.fantasypros.com/images/nba/players/1200x1200/2803.jpg) ;
+} */
+
+
+.aboutmetext {
+    justify-self: center;
+    align-self: center;
+    height: 400px;
+    width: 80%;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+img {
+    width: 110px;
+    height: 110px;
+}
+
+
+.end {
+    height: 80px;
+    border-top: 5px solid #cccccc;
+}
+
+.copyright {
+    text-align: center;
+    background-color: #19415C;
+    padding-top: 25px;
+    height: 80px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+@media screen and (max-width: 1115px) {
+
+    .aboutmepic, .interestspic, .missionpic {
+        width: 300px;
+        height: 300px;
+    }
+    .aboutmetext {
+        width: 70%;
+    }
+
+    .aboutmeinfogrid, .interestsgrid, .missiongrid {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    .currentskills > h2, .futureskills > h2 {
+        font-size: 40px;
+        text-align: center;
+        margin: 30px;
+        padding: 20px;
+    }
+
+    img {
+        width: 90px;
+        height: 90px;
+    }
+    
+}
+
+@media screen and (max-width: 720px) {
+
+    .aboutmepara {
+        height: 750px;
+    }
+
+    .aboutmeinfogrid, .interestsgrid {
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        justify-content: space-around;
+    }
+
+    .missiongrid {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 800px;
+        justify-content: space-around;
+    }
+
+    .beforeinfo {
+        height: 0px;
+    }
+
+    .aboutmepara > h1{
+        padding-bottom: 0px;
+        font-size: 40px;
+    }
+
+    .skills > h1{
+        padding-top: 20px;
+        font-size: 40px;
+    }
+
+    .aboutbanner {
+        height: 3730px;
+    
+    }
+    .abovebanner{
+        height: 200px;
+    }
+    
+    .belowbanner {
+        height: 110px;
+    }
+
+    .currentskills > h2, .futureskills > h2 {
+        font-size: 25px;
+        text-align: center;
+        margin: 60px;
+    }
+
+    img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .skillspic {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        justify-content: space-around;
+    }
+
+    /* .currentskills {
+
+    } */
+
+}
+
+@media screen and (max-width: 599px) {
+
+    .hamburger::before {
+        content: '\2630';
+        font-size: 35px;
+        color: white;
+        position: relative;
+        display: flex;
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+    }
+
+    .rightsidetop {
+        padding-right: 20px;
+        flex-direction: column;
+        position: relative;
+    }
+
+
+    .shown {
+        display: block;
+        position: relative;
+        height: 200px;
+        font-size: 25px;
+    }
+
+    .rightside {
+        display: none;
+    }
+
+    .icon {
+        margin-left: 5px;
+    }
+
+    .hidden {
+        padding-left: 10px;
+    }
+
+    .aboutname {
+        font-size: 50px;
+    }
+
+    .abovebanner {
+        height: 230px;
+    }
+    
+    .belowbanner {
+        height: 150px;
+    }
+
+    .aboutmetext {
+        font-size: 18px;
+    }
+
+    .aboutmepic, .interestspic, .missionpic {
+        width: 250px;
+        height: 250px;
+    }
+
+    .currentskills > h2, .futureskills > h2 {
+        font-size: 25px;
+        text-align: center;
+        margin: 40px;
+    }
+
+    img {
+        width: 10vw;
+        height: 10vw;
+    }
+}

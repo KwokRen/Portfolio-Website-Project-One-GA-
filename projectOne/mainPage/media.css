@@ -7,7 +7,7 @@
 }
 
 
-@media screen and (max-width: 1115px) and (min-width: 600px) {
+@media screen and (max-width: 1115px) {
 
     .rightherobanner {
         text-align: center;
@@ -74,6 +74,14 @@
         font-size: 15px;
         padding: 0 10px 0 10px;
     }
+
+    input {
+        width: 90%;
+    }
+
+    textarea {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 599px) {
@@ -89,7 +97,7 @@
     }
 
     .rightsidetop {
-        width: 15%;
+        padding-right: 20px;
         flex-direction: column;
         position: relative;
     }
@@ -107,7 +115,11 @@
     }
 
     .icon {
-        padding-left: 20px;
+        margin-left: 5px;
+    }
+
+    .hidden {
+        padding-left: 10px;
     }
 
     .herobanner {
@@ -158,6 +170,7 @@
     .myinfobutton {
         margin-bottom: 30px;
     }
+
     
 }   
 
@@ -193,17 +206,10 @@
         height: 200px;
     }
 
-
     .connect {
-        margin-top: 10px;
         font-size: 30px;
     }
 
-    input {
-        width: 80%;
-    }
-
-    textarea {
-        width: 80%;
-    }
 }
+
+

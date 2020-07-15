@@ -17,22 +17,22 @@
     <main>
         <div class="top">
             <nav class="navbartop">
-                <div class = "icon">Icon</div>
-                <div class = "rightsidetop">
+                <div class="icon"><a href="index.html"><img src="https://res.cloudinary.com/dpggcudix/image/upload/v1594787116/Screen_Shot_2020-07-15_at_12.24.48_AM_hx3b2v.png" class="iconpic"></a></div>
+                <div class="rightsidetop">
                     <div>
-                    <a class ="hamburger" href="#"></a>
+                    <a class="hamburger" href="#"></a>
                     </div>
                     <div class="rightside">
-                        <div class="desktopshow">ABOUT</div>
-                        <div class="desktopshow">PROJECTS</div>
-                        <div class="desktopshow">CONTACT</div>
+                        <div class="desktopshow desktopshowA"><a href="../aboutPage/about.html" id="desktopshowhoverA">About</a></div>
+                        <div class="desktopshow desktopshowB"><a href="../projectPage/projects.html" id="desktopshowhoverB">Projects</a></div>
+                        <div class="desktopshow desktopshowC"><a href="#contacts" class="sliding-link" id="desktopshowhoverC">Contact</a></div>
                     </div>
                 <div>
             </nav>
             <div class="hamburgermenu">
-                <div class="hidden">ABOUT</div>
-                <div class="hidden">PROJECTS</div>
-                <div class="hidden">CONTACT</div>
+                <div class="hidden"><a href="../aboutPage/about.html">About</a></div>
+                <div class="hidden"><a href="../projectPage/projects.html">Projects</a></div>
+                <div class="hidden"><a href="#contacts">Contact</a></div>
             </div>
             <div class="herobanner">
                 <div class="leftherobanner">
@@ -49,29 +49,29 @@
                     <img class="myinfoimage" src="https://cdn4.iconfinder.com/data/icons/basic-ui-2-line/32/person-people-man-profile-human-256.png">
                     <p class="myinfoheader">ABOUT</p>
                     <p class="myinfopara">Learn what my aspirations are. Discover who I am both as a software engineer and my life outside my career.</p>
-                    <button class="myinfobutton">About</button>
+                    <button class="myinfobutton"><a href="../aboutPage/about.html">About</a></button>
                 </div>
                 <div class="projects">
                     <img class="myinfoimage" src="https://cdn2.iconfinder.com/data/icons/files-folders-3/24/files-folders-26-256.png">
                     <p class="myinfoheader">PROJECTS</p>
-                    <p class="myinfopara">Look at some of my projects that I have worked on. You can check the applications out or view them on Github.</p>
-                    <button class="myinfobutton">Projects</button>
+                    <p class="myinfopara">Look at some of my projects that I have worked on. You can check the applications out.</p>
+                    <button class="myinfobutton"><a href="../projectPage/projects.html">Projects</a></button>
                 </div>
                 <div class="blog">
                     <img class="myinfoimage" src="https://cdn2.iconfinder.com/data/icons/miscellaneous-31/60/newspaper-256.png">
                     <p class="myinfoheader">BLOG</p>
                     <p class="myinfopara">Follow me on my journey to becoming a software engineer. Right from the very first day of bootcamp.</p>
-                    <button class="myinfobutton">Blog</button>
+                    <button class="myinfobutton"><a href="https://itzkwokagain.wordpress.com/">Blog</a></button>
                 </div>
             </div>
         </div>
         <div class="end">
             <div class="connect">
-                <p>CONNECT WITH ME</p>
+                <p>Connect With Me</p>
             </div>
             <form>
                 <div class="outerformdiv">
-                    <div class="formdiv">
+                    <div class="formdiv" id="contacts">
                         <div>
                             <input type="text" id="fullname" name="fullname" placeholder="Name"></input>
                         </div>
@@ -89,7 +89,7 @@
             </form>
             <div class="githubandlinkedin">
                 <a target="_blank" href=“#” class="fa fa-linkedin-square"></a>
-                    <i class="fa fa-github"></i>
+                    <a target="_blank" href="https://github.com/KwokRen"><i class="fa fa-github"></i></a>
             </div>
             <div class="copyright">
                 <p>Copyright © 2020 Kwok Ren</p>

@@ -11,7 +11,6 @@
 
 .navbartop {
     display: flex;
-    width: 100vw;
     height: 90px;
     justify-content: space-between;
     color: white;
@@ -25,7 +24,13 @@
 .icon {
     display: flex;
     justify-content: center;
-    padding-left: 75px;
+    margin-left: 50px;
+}
+
+.iconpic {
+    height: 80px;
+    width: 170px;
+    margin: 12px;
 }
 
 .rightsidetop {
@@ -42,8 +47,7 @@
 .herobanner {
     display: flex;
     position: relative;
-    width: 100vw;
-    height: 650px;
+    height: 750px;
     box-sizing: border-box;
     border-bottom: 5px solid #cccccc;
 }
@@ -96,15 +100,30 @@
 
 .hidden {
     height: 33.3%;
-    padding-left: 20px;
+    padding-left: 50px;
     display: flex;
     align-items: center;
     border-bottom: 5px solid #cccccc;
 }
 
+.hidden > a {
+    color: black;
+}
+
 .desktopshow {
     padding: 12px;
 }
+
+.desktopshow > a {
+    color: white;
+    text-decoration: none;
+}
+
+.desktopshow:hover {
+    border-radius: 100px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
+    background-color: #dbf5ff;
+  }
 
 .myinfo {
     display: grid;
@@ -147,6 +166,11 @@
     color: white;
     text-align: center;
     font-size: 25px;
+    margin: 12px;
+}
+
+.myinfobutton > a{
+    color: white;
 }
 
 .end {
@@ -200,6 +224,7 @@ textarea {
     color: white;
     text-align: center;
     font-size: 25px;
+    margin: 12px;
 }
 /* Code is from w3 school */
 .fa-linkedin-square {
