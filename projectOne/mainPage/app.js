@@ -47,20 +47,20 @@ $myinfohover('projects','projectsinfoimage');
 $myinfohover('blog','bloginfoimage');
 
 
-const $buttonglow = function(name, button, link) {
+const $buttonglow = function(name, link, button) {
   let $name = $(`.${name}`);
   $name.hover(function() {
-  $(`.${button}`).css('background-color','#dbf5ff');
   $(`.${link}`).css('color','black');
+  $(`.${button}`).css({'background-color':'#dbf5ff', 'color':'black'});
   }, function () {
-  $(`.${button}`).css('background-color',"#19415C");
   $(`.${link}`).css('color','white');
+  $(`.${button}`).css({'background-color':"#19415C", 'color':'white'});
   })
 };
 
-$buttonglow('about','aboutbutton', 'aboutlink');
-$buttonglow('projects','projectsbutton', 'projectslink');
-$buttonglow('blog','blogbutton', 'bloglink');
+$buttonglow('about', 'aboutlink', 'aboutbutton');
+$buttonglow('projects', 'projectslink', 'projectsbutton');
+$buttonglow('blog', 'bloglink' ,'blogbutton');
 
 let $picturehover = $('.profilepic');
 let $rightherobanner = $('.rightherobanner');
