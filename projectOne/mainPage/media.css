@@ -177,8 +177,8 @@
     }
 
     .profilepic {
-        height: 200px;
-        width: 200px;
+        height: 300px;
+        width: 300px;
     }
 
     .intro {
@@ -233,8 +233,8 @@
     }
 
     .profilepic {
-        height: 150px;
-        width: 150px;
+        height: 250px;
+        width: 250px;
     }
 
     .myinfoimage {
@@ -254,5 +254,4 @@
     }
 
 }
-
 

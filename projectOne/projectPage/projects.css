@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Titillium+Web&display=swap');
+
+
+/* * {
+    border: 1px solid black;
+} */
+
+.top {
+    background-color: #19415C;
+}
+
+.navbartop {
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 25px;
+    border-bottom: 5px solid #cccccc;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.iconpic {
+    padding: 0px;
+    height: 80px;
+    width: 170px;
+    margin: 12px;
+}
+
+.rightsidetop {
+    display: flex;
+    padding-right: 75px;
+}
+
+.rightside {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.hamburgermenu {
+    height: 0px;
+    width: 100%;
+    background-color: #19415C;
+    color: black;
+    display: none;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.hidden {
+    height: 33.3%;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid #cccccc;
+    color: white;
+}
+
+.hamburgermenu > a {
+    color: white;
+    text-decoration: none;
+}
+
+.hidden:hover {
+    background-color: #dbf5ff;
+    color: black;
+    text-shadow: 0px 0px 7px rgb(26,65,92,1);
+}
+
+.desktopshow {
+    padding: 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+.rightside > a {
+    color: white;
+    text-decoration: none;
+}
+
+.desktopshow:hover {
+    border-radius: 100px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
+    background-color: #dbf5ff;
+    transform: scale(1.1);
+}
+
+.projectsbanner {
+    height: 3250px;
+    box-sizing: border-box;
+    background-color: #dbf5ff;
+}
+
+.abovebanner{
+    height: 200px;
+}
+
+.belowbanner {
+    height: 100px;
+}
+
+.projectsname {
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Lato', sans-serif;
+    background-color: #19415C;
+    color: white;
+    padding: 50px 0 50px 0;
+    border-bottom: 5px solid #cccccc;
+    border-top: 5px solid #cccccc;
+    transform: translate(0px, 300px);
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+
+.projectsnameslide {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+img {
+    padding-top: 100px;
+    width: 800px;
+    height: 600px;
+}
+
+.end {
+    height: 80px;
+    border-top: 5px solid #cccccc;
+}
+
+.copyright {
+    text-align: center;
+    background-color: #19415C;
+    padding-top: 25px;
+    height: 80px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.projectobject {
+    margin-top: 150px;
+    width: 500px;
+    background-color: #19415C;
+    color: white;
+    border-bottom: 5px solid #cccccc;
+    border-top: 5px solid #cccccc;
+    transform: translate(0px, 300px);
+    opacity: 0;
+}
+
+.divslideup {
+    transform: translate(0px, 0px);
+    transition: all 1s ease-in-out;
+    opacity: 1;
+}
+
+
+.projectobject:nth-child(1), .projectobject:nth-child(3) {
+    display: flex;
+    width: 100%;
+    padding-left: 40px;
+}
+
+.projectobject:nth-child(2) {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    flex-direction: row-reverse;
+    padding-right: 40px;
+}
+
+.projectobjecttext {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 710px;
+    padding: 0 30px 0 30px;
+    text-align: center;
+}
+
+.projectobjecttitle > h2{
+    margin-top: -50px;
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+}
+
+.projectobjectdescription {
+    margin: 60px;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.projectobjectlink {
+    height: 50px;
+    width: 170px;
+    border-radius: 10px;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #dbf5ff;
+    text-align: center;
+    font-size: 25px;
+    margin: 12px;
+    transition: all 0.6s ease-in-out
+}
+
+.linkhover {
+    box-shadow: 0px 0px 15px rgb(219,244,255,1);
+    transform: scale(1.1);
+}
+
+.projectobjectlink > a {
+    color: black;
+}
+
+@media screen and (max-width: 1240px) {
+    img {
+        height: 50vw;
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 1115px) {
+
+    .projectobjecttitle > h2{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .projectsbanner {
+        height: 3900px;
+    }
+
+    .projectobject {
+        height: 900px;
+    }
+
+    .projectobjecttitle > h2 {
+        font-size: 40px;
+    }
+
+    .projectobject:nth-child(1), .projectobject:nth-child(3) {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-right: 40px;
+    }
+
+    .projectobject:nth-child(2) {
+        flex-direction: column;
+        padding-left: 40px;
+        align-items: center;
+    }
+
+    .rightsidetop {
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+
+    .hamburger::before {
+        content: '\2630';
+        font-size: 35px;
+        color: #dbf5ff;
+        position: relative;
+        display: flex;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        justify-content: center;
+    }
+
+    /* https://stackoverflow.com/questions/30064643/css-wont-flip-a-unicode-font-icon-and-wont-change-its-color-on-hover */
+
+    .hamburger:hover:before {
+        color: black;
+        transform: scale(1.25);
+    }
+
+    .hamburgercrossed::before {
+        content: '\2715';
+        font-size: 35px;
+        color: #dbf5ff;
+        position: relative;
+        display: flex;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        justify-content: center;
+    }
+
+    .hamburgerdiv {
+        width: 60px;
+        height: 55px;
+    }
+
+    .hamburgerdiv:hover {
+        background-color: #dbf5ff;
+        border-radius: 20px;
+    }
+
+    .hamburgerdiv > .hamburger:hover {
+        text-decoration: none;
+    }
+
+    .rightsidetop {
+        padding-right: 20px;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .projectobjecttitle > h2 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+
+    .shown {
+        display: block;
+        position: relative;
+        height: 200px;
+        font-size: 25px;
+    }
+
+    .rightside {
+        display: none;
+    }
+
+    .icon {
+        margin-left: 5px;
+    }
+
+    .hidden {
+        padding-left: 25px;
+    }
+
+    .abovebanner{
+        height: 200px;
+    }
+    
+    .belowbanner {
+        height: 150px;
+    }
+
+    img {
+        padding-top: 20px;
+        height: 30%;
+        width: 80%;
+    }
+
+    .projectobjecttitle > h2 {
+        font-size: 25px;
+    }
+    
+    .projectobjectdescription {
+        font-size: 15px;
+        margin: 20px;
+    }
+
+    .projectsbanner {
+        height: 3500px;
+    }
+
+    .projectobject {
+        height: 800px;
+    }
+
+    .projectsname {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 350px) {
+
+
+    .projectobjectdescription {
+        margin: 5px;
+    }
+
+    .projectobjecttitle > h2 {
+        padding-top: 30px;
+        font-size: 18px;
+    }
+
+    .abovebanner{
+        height: 100px;
+    }
+    
+    .belowbanner {
+        height: 50px;
+    }
+
+    .projectsbanner {
+        height: 3300px;
+    }
+
+    img {
+        height: 20%;
+        width: 90%;
+    }
+}
