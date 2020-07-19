@@ -90,6 +90,6 @@ Under the banner, I made divs for each project I wanted to display. The divs wou
 
 ## The Whole Website
 
-## Design and Style
+#### Design and Style
 
 I made sure that I was keeping the website simple and mobile friendly. I would constantly check on my own phone whether I could interact with the pages or not. The size of the containers are friendly. The text is readable, and nothing overlaps which is the best part. The hamburger menu is simple to use, scrolling is interactive. My interests section would still be interacting, but the transition of displaying the icons would be a little different on mobile compared to desktop, but not in a bad way. The links all work properly. I also made sure that the pictures were big enough on mobile to view, and font sizes make it so that any mobile device should be able to read it. I also kept the styles simple, but using only three different colors. The two different versions of blue I had were very contrasting, so it made the website look nice. The borders I added were grey and most of them were 5px wide for consistency. I didn't want to add too much colors to everything, and tried to make it as simple as possible so I didn't have to work as much on the design, rather than the animatione effects which I feel are much better to display overall. 

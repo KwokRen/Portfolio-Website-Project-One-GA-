@@ -90,7 +90,18 @@ let options = {
 let observerOne = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting) {
-      document.querySelector('.myinfo').classList.add('infoslideup');
+      document.querySelector('.aboutinfoimage').classList.add('imageslideup');
+      document.querySelector('.projectsinfoimage').classList.add('imageslideup');
+      document.querySelector('.bloginfoimage').classList.add('imageslideup');
+      document.querySelector('.myinfoheaderabout').classList.add('myinfoslideup');
+      document.querySelector('.myinfoheaderprojects').classList.add('myinfoslideup');
+      document.querySelector('.myinfoheaderblog').classList.add('myinfoslideup');
+      document.querySelector('.myinfoparaabout').classList.add('myinfoparaslide');
+      document.querySelector('.myinfoparaprojects').classList.add('myinfoparaslide');
+      document.querySelector('.myinfoparablog').classList.add('myinfoparaslide');
+      document.querySelector('.aboutbutton').classList.add('myinfobuttonslide');
+      document.querySelector('.projectsbutton').classList.add('myinfobuttonslide');
+      document.querySelector('.blogbutton').classList.add('myinfobuttonslide');
     }
   })
 }, options);

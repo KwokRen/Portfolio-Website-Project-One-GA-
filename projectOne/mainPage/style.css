@@ -166,9 +166,6 @@ html {
     height: 700px;
     background-color: #dbf5ff;
     color: black;
-    transform: translate(0px, 500px);
-    opacity: 0;
-    /* border-bottom: 5px solid #cccccc; */
 }
 
 .myinfo > div {
@@ -177,7 +174,7 @@ html {
     border-bottom: 1px solid #cccccc;
 }
 
-.infoslideup {
+.iconslideup {
     transform: translate(0px, 0px);
     transition: all 1s ease-in-out;
     opacity: 1;
@@ -190,15 +187,30 @@ html {
 
 .myinfoimage {
     padding: 30px;
-    transition: all 0.6s ease-in-out;
     height: 250px;
     width: 250px;
+    transform: translate(0px, 500px);
+    opacity: 0;
+}
+
+.imageslideup {
+    transform: translate(0px, 0px);
+    transition: transform 2s ease-in-out;
+    opacity: 1;
 }
 
 .myinfoheader {
     padding-top: 0px;
     font-size: 40px;
     font-family: 'Lato', sans-serif;
+    transform: translate(0px, 500px);
+    opacity: 0;
+}
+
+.myinfoslideup {
+    transform: translate(0px, 0px);
+    transition: transform 2s ease-in-out;
+    opacity: 1;
 }
 
 .myinfopara {
@@ -206,6 +218,14 @@ html {
     font-size: 20px;
     padding: 0 100px 0 100px;
     font-family: 'Titillium Web', sans-serif;
+    transform: translate(0px, 500px);
+    opacity: 0;
+}
+
+.myinfoparaslide {
+    transform: translate(0px, 0px);
+    transition: transform 2s ease-in-out;
+    opacity: 1;
 }
 
 .myinfobutton {
@@ -219,6 +239,14 @@ html {
     font-size: 25px;
     margin: 12px;
     transition: all 0.6s ease-in-out;
+    transform: translate(0px, 500px);
+    opacity: 0;
+}
+
+.myinfobuttonslide {
+    transform: translate(0px, 0px);
+    transition: transform 2s ease-in-out;
+    opacity: 1;
 }
 
 .myinfobutton:hover {
