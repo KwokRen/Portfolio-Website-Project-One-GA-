@@ -4,6 +4,13 @@
         height: 150px;
         padding: 0 50px 0 50px;
     }
+
+    .profilepic {
+    left: 200px;
+    width: 300px;
+    height: 300px;
+    transition: 3s;
+    }
 }
 
 
@@ -44,6 +51,10 @@
     .profilepic {
         width: 250px;
         height: 250px;
+    }
+
+    .rightsidetop {
+        padding-right: 50px;
     }
 
     .intro {
@@ -89,11 +100,44 @@
     .hamburger::before {
         content: '\2630';
         font-size: 35px;
-        color: white;
+        color: #dbf5ff;
         position: relative;
         display: flex;
-        transition: all .5s ease-in-out;
+        transition: all 0.2s ease-in-out;
         cursor: pointer;
+        justify-content: center;
+    }
+
+    /* https://stackoverflow.com/questions/30064643/css-wont-flip-a-unicode-font-icon-and-wont-change-its-color-on-hover */
+
+    .hamburger:hover:before {
+        color: black;
+        transform: scale(1.25);
+    }
+
+    .hamburgercrossed::before {
+        content: '\2715';
+        font-size: 35px;
+        color: #dbf5ff;
+        position: relative;
+        display: flex;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        justify-content: center;
+    }
+
+    .hamburgerdiv {
+        width: 60px;
+        height: 55px;
+    }
+
+    .hamburgerdiv:hover {
+        background-color: #dbf5ff;
+        border-radius: 20px;
+    }
+
+    .hamburgerdiv > .hamburger:hover {
+        text-decoration: none;
     }
 
     .rightsidetop {
@@ -119,7 +163,7 @@
     }
 
     .hidden {
-        padding-left: 10px;
+        padding-left: 25px;
     }
 
     .herobanner {
@@ -171,6 +215,9 @@
         margin-bottom: 30px;
     }
 
+    .connect {
+        font-size: 15px;
+    }
     
 }   
 
@@ -204,10 +251,6 @@
         font-size: 20px;
         padding: 0 50px 0 50px;
         height: 200px;
-    }
-
-    .connect {
-        font-size: 30px;
     }
 
 }
