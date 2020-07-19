@@ -50,7 +50,7 @@
     background-color: #19415C;
     color: black;
     display: none;
-    font-family: 'Titillium Web', sans-serif;
+
 }
 
 .hidden {
@@ -62,15 +62,23 @@
     color: white;
 }
 
-.hidden > a {
+.hamburgermenu > a {
     color: white;
+    text-decoration: none;
+}
+
+.hidden:hover {
+    background-color: #dbf5ff;
+    color: black;
+    text-shadow: 0px 0px 7px rgb(26,65,92,1);
 }
 
 .desktopshow {
     padding: 12px;
+    transition: all 0.2s ease-in-out;
 }
 
-.desktopshow > a {
+.rightside > a {
     color: white;
     text-decoration: none;
 }
@@ -79,11 +87,12 @@
     border-radius: 100px;
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
     background-color: #dbf5ff;
+    transform: scale(1.1);
   }
 
 
 .aboutbanner {
-    height: 3660px;
+    height: 2900px;
     box-sizing: border-box;
     background-color: #dbf5ff;
 }
@@ -105,6 +114,14 @@
     padding: 50px 0 50px 0;
     border-top: 5px solid #cccccc;
     border-bottom: 5px solid #cccccc;
+    transform: translate(0px, 300px);
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+
+.aboutnameslide {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 
 .aboutmepara {
@@ -113,8 +130,21 @@
     color: white;
 }
 
+.aboutmeinfo {
+    transform: translate(0px, 300px);
+    opacity: 0;
+}
+
+.aboutmeslideup {
+    transform: translate(0px, 0px);
+    transition: all 1s ease-in-out;
+    opacity: 1;
+}
+
 .skills {
     height: 600px;
+    transform: translate(0px, 300px);
+    opacity: 0;
 }
 
 .skillspic {
@@ -155,12 +185,33 @@
     margin: 10px;
 }
 
+/* https://www.w3schools.com/howto/howto_css_shake_image.asp */
+
+.imageskills > img:hover {
+    animation: shaking 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shaking {
+    0% { transform: translate(2px, 2px) rotate(0deg); }
+    10% { transform: translate(-2px, -4px) rotate(-5deg); }
+    20% { transform: translate(-6px, 0px) rotate(5deg); }
+    30% { transform: translate(6px, 4px) rotate(0deg); }
+    40% { transform: translate(2px, -2px) rotate(5deg); }
+    50% { transform: translate(-2px, 4px) rotate(-5deg); }
+    60% { transform: translate(-6px, 2px) rotate(0deg); }
+    70% { transform: translate(6px, 2px) rotate(-5deg); }
+    80% { transform: translate(-2px, -2px) rotate(5deg); }
+    90% { transform: translate(2px, 4px) rotate(0deg); }
+    100% { transform: translate(2px, -4px) rotate(-5deg); }
+}
+
 .aboutmepara > h1{
     text-align: center;
     margin-top: 50px;
     font-size: 70px;
     height: 100px;
-    padding-top: 10px;
+    padding-top: 20px;
     font-family: 'Lato', sans-serif;
     border-top: 5px solid #cccccc;
 }
@@ -178,53 +229,150 @@
     border-top: 5px solid #cccccc;
 }
 
-.beforeinfo {
-    height: 130px;
-    background-color: #dbf5ff;
-}
-
-.aboutmeinfogrid, .interestsgrid {
+.aboutmeinfogrid {
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 4fr 6fr;
-    height: 500px;
+    height: 600px;
 }
 
-.missiongrid {
+.interestsgrid {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 6fr 4fr;
-    height: 500px;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 600px;
+    text-align: center;
 }
 
-.aboutmepic, .interestspic, .missionpic {
+.interests {
+    transform: translate(0px, 300px);
+    opacity: 0;
+}
+
+.interestsslideup {
+    transform: translate(0px, 0px);
+    transition: all 1s ease-in-out;
+    opacity: 1;
+}
+
+.interestspara {
+    align-self: center;
+    justify-self: center;
+    width: 85%;
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icons > div > img {
+    height: 80px;
+    width: 80px;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+.icons > div > img:hover {
+    filter: drop-shadow(0px 0px 10px rgba(219, 244, 255, 1));
+    animation: bounce 2s ease-in-out infinite alternate;
+    transition: all 1s ease-in-out;
+}
+
+
+.iconholder {
+    display: flex;
+    cursor: pointer;
+    height: 120px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+}
+
+.iconOne, .iconTwo, .iconThree {
+    transform: translate(-100px, 0px);
+    opacity: 0;
+}
+
+.iconFour, .iconFive, .iconSix {
+    transform: translate(100px, 0px);
+    opacity: 0;
+}
+
+.iconOne, .iconFour {
+    transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+}
+
+.iconTwo, .iconFive {
+    transition: transform 2s ease-in-out 2s, opacity 2s ease-in-out 2s;
+}
+
+.iconThree, .iconSix {
+    transition: transform 2s ease-in-out 4s, opacity 2s ease-in-out 4s;
+}
+
+.slidein {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.iconholdertoggle {
+    filter: drop-shadow(0px 0px 10px rgba(219, 244, 255, 1));
+    background-color: #dbf5ff;
+    transition: all 1s ease-in-out;
+}
+
+.aboutmepic {
     justify-self: center;
     align-self: center;
     height: 400px;
     width: 400px;
     border: 5px solid #cccccc;
-    background-image: url(https://images.fantasypros.com/images/nba/players/1200x1200/2803.jpg) ;
+    background-image: url(https://res.cloudinary.com/dpggcudix/image/upload/v1595121567/788FD670-E4C9-4565-A38D-F0A41E2BA27D_pncy0x.png) ;
     background-size: cover;
     border-radius: 50%;
+    grid-area: 1/1/3/2;
 }
-
-/* .interestspic {
-    background-image: url(https://images.fantasypros.com/images/nba/players/1200x1200/2803.jpg) ;
-}
-
-.missionpic {
-    background-image: url(https://images.fantasypros.com/images/nba/players/1200x1200/2803.jpg) ;
-} */
 
 
 .aboutmetext {
     justify-self: center;
     align-self: center;
-    height: 400px;
+    height: 50%;
     width: 80%;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
+    grid-area: 1/2/2/3;
+}
+
+.mission {
+    justify-self: center;
+    align-self: flex-start;
+    height: 50%;
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    grid-area: 2/2/3/3;
 }
 
 
@@ -251,16 +399,17 @@ img {
 
 @media screen and (max-width: 1115px) {
 
-    .aboutmepic, .interestspic, .missionpic {
+    .aboutmepic {
         width: 300px;
         height: 300px;
     }
-    .aboutmetext {
-        width: 70%;
+
+    .aboutmetext, .mission{
+        font-size: 16px;
     }
 
-    .aboutmeinfogrid, .interestsgrid, .missiongrid {
-        grid-template-columns: 1fr 1fr; 
+    .aboutmeinfogrid {
+        grid-template-columns: 8fr 9fr; 
     }
 
     .currentskills > h2, .futureskills > h2 {
@@ -273,6 +422,10 @@ img {
     img {
         width: 90px;
         height: 90px;
+    }
+
+    .interestspara {
+        font-size: 16px;
     }
     
 }
@@ -287,20 +440,13 @@ img {
         display: flex;
         flex-direction: column;
         height: 800px;
-        justify-content: space-around;
     }
 
-    .missiongrid {
-        display: flex;
-        flex-direction: column-reverse;
-        height: 800px;
-        justify-content: space-around;
+    .aboutmepic {
+        height: 250px;
+        width: 250px;
     }
-
-    .beforeinfo {
-        height: 0px;
-    }
-
+    
     .aboutmepara > h1{
         padding-bottom: 0px;
         font-size: 40px;
@@ -312,7 +458,7 @@ img {
     }
 
     .aboutbanner {
-        height: 3730px;
+        height: 2900px;
     
     }
     .abovebanner{
@@ -341,9 +487,37 @@ img {
         justify-content: space-around;
     }
 
-    /* .currentskills {
+    .aboutmetext, .mission {
+        height: 175px;
+    }
 
-    } */
+    .aboutmetext {
+        padding-top: 20px;
+    }
+
+    .mission {
+        align-self: center;
+    }
+
+    .rightsidetop {
+        padding-right: 50px;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .interestspara {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        height: 400px;
+        font-size: 15px;
+    }
 
 }
 
@@ -352,11 +526,43 @@ img {
     .hamburger::before {
         content: '\2630';
         font-size: 35px;
-        color: white;
+        color: #dbf5ff;
         position: relative;
         display: flex;
-        transition: all .5s ease-in-out;
+        transition: all 0.2s ease-in-out;
         cursor: pointer;
+        justify-content: center;
+    }
+    /* https://stackoverflow.com/questions/30064643/css-wont-flip-a-unicode-font-icon-and-wont-change-its-color-on-hover */
+
+    .hamburger:hover:before {
+        color: black;
+        transform: scale(1.25);
+    }
+
+    .hamburgercrossed::before {
+        content: '\2715';
+        font-size: 35px;
+        color: #dbf5ff;
+        position: relative;
+        display: flex;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        justify-content: center;
+    }
+
+    .hamburgerdiv {
+        width: 60px;
+        height: 55px;
+    }
+
+    .hamburgerdiv:hover {
+        background-color: #dbf5ff;
+        border-radius: 20px;
+    }
+
+    .hamburgerdiv > .hamburger:hover {
+        text-decoration: none;
     }
 
     .rightsidetop {
@@ -382,7 +588,7 @@ img {
     }
 
     .hidden {
-        padding-left: 10px;
+        padding-left: 25px;
     }
 
     .aboutname {
@@ -397,13 +603,8 @@ img {
         height: 150px;
     }
 
-    .aboutmetext {
-        font-size: 18px;
-    }
-
-    .aboutmepic, .interestspic, .missionpic {
-        width: 250px;
-        height: 250px;
+    .aboutmetext, .mission {
+        font-size: 14px;
     }
 
     .currentskills > h2, .futureskills > h2 {
@@ -415,5 +616,37 @@ img {
     img {
         width: 10vw;
         height: 10vw;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .aboutmetext, .mission {
+        font-size: 13px;
+    }
+
+    .mission {
+        margin-top: 20px;
+    }
+
+    .icons > div > img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .iconholdertoggle {
+        filter: drop-shadow(0px 0px 10px rgba(219, 244, 255, 1));
+        transform: scale(1.25);
+        background-color: #dbf5ff;
+        transition: all 1s ease-in-out;
+    }
+
+    .iconholder {
+        height: 70px;
+        width: 70px;
+    }
+
+    .interestspara {
+        font-size: 12px;
     }
 }
