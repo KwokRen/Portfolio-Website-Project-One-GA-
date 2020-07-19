@@ -10,9 +10,10 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |---|---| ---|
 |Day 1| Project Description | Complete
 |Day 1| Wireframes / Priority Matrix / Timeline | Complete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Day 4| MVP & Bug Fixes | Incomplete
-|Day 5| Final Touches | Incomplete
+|Day 2| Skeleton HTML, CSS, JavaScript | Complete
+|Day 3| Media Queries | Complete
+|Day 4| MVP & Bug Fixes | Complete
+|Day 5| Final Touches | Complete
 |Day 6| Present | Incomplete
 
 
@@ -84,7 +85,7 @@ The functionality will then be divided into two separate lists: MVP and PostMVP.
 	- Mobile first
 	- Tablet
 	- Desktop
-- Refactor Code (making it readable
+- Refactor Code
 - Deployment
 
 #### PostMVP 
@@ -104,48 +105,61 @@ Time frames are also key in the development cycle.  You have limited time to cod
 #### MVP
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Homepage | H | 5hr | -hr | -hr|
-| Navigation Bar | H | 2hr | -hr | -hr|
-| Icon | L | 4H | -hr | -hr|
-| Navigation Bar Links | H | 1hr| -hr | -hr |
-| About Me Page| M | 3hr | -hr | -hr|
-| Working with API | H | 4hrs| -hr | -hr |
-| Media Responsive | H | 5hr | -hr | -hr|
-| Social Media Icons | L | 1hr | -hr | -hr|
-| Projects Page | M | 3hr | -hr | -hr|
-| Contacts | M | 2hr | -hr | -hr|
-| Deployment | M | 2hr | -hr | -hr|
-| Total | H | 32hrs| -hrs | -hrs |
+| Homepage | H | 5hr | 5hr | 5hr|
+| Navigation Bar | H | 2hr | 1hr | 1hr|
+| Icon | L | 4H | 1hr | 1hr|
+| Navigation Bar Links | H | 1hr| 0hr | 0hr |
+| About Me Page| M | 3hr | 2hr | 2hr|
+| Working with API | H | 4hrs| 2hr | 2hr |
+| Media Responsive | H | 5hr | 5hr | 5hr|
+| Social Media Icons | L | 1hr | 0hr | 0hr|
+| Projects Page | M | 3hr | 3hr | 3hr|
+| Contacts | M | 2hr | 1hr | 1hr|
+| Deployment | M | 2hr | 0hr | 0hr|
+| Total | H | 32hrs| 20hrs | 20hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Sliding transitions | M | 6hr | -hr | -hr|
-| Consistent color schemes | L | 1hr | -hr | -hr|
-| Clean and Simple Layout | L | 3hr | -hr | -hr|
-| Different Transitions | L | 3hr | -hr | -hr|
-| Hover | M | 3hr | -hr | -hr|
-| Total | H | 16hrs| -hrs | -hrs |
+| Sliding transitions | M | 6hr | 6hr | 6hr|
+| Consistent color schemes | L | 1hr | 1hr | 1hr|
+| Clean and Simple Layout | L | 3hr | 2hr | 2hr|
+| Different Transitions | L | 3hr | 3hr | 3hr|
+| Hover | M | 3hr | 3hr | 3hr|
+| Total | H | 16hrs| 15hrs | 15hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
+
+Bootstrap: I used bootstrap to help organize my containers better and to make it look better when working on media queries. It was also a con because I had to overwrite some pre-existing CSS styles that came with bootstraps such as links. Overall, it helped me get a good feel of the structure of the page.
+
+jQuery: I used jQuery to add dynamic effects to the page. It's allowed me to change certain CSS styles while it listens to how the user interacts with the webpage. 
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
+On my homepage, I wanted some icons to glow up when I hovered over the div that it was in. At first, I tried to find whether box-shadow or text-shadow would help me out, but neither of them did. I went on Google and searched to see if there was any way I could make icons glow up, and it took me to a person explaining you could on Stack Overflow. He explained that if the Icon was transparent (which I made sure was the case), I would be able to give the icons a filter with a drop shadow that would give a shadow perception very similar to how box-shadow and text-shadow worked. I tried it, and I thought it was super dope that I could make icons glow up. One of the more aesthetically pleasing CSS styles out there that I've learned throughout working on this project. 
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+const $myinfohover = function(name, image, button) {
+  let $name = $(`.${name}`);
+  $name.hover(function() {
+    $(`.${image}`).css('-webkit-filter','drop-shadow(0px 0px 7px rgba(255, 255, 255, 1)');
+    $(`.${image}`).css('filter','drop-shadow(0px 0px 7px rgba(255, 255, 255, 1)');
+  }, function() {
+    $(`.${image}`).css('filter','none');
+    })
+};
+
+$myinfohover('about','aboutinfoimage');
+$myinfohover('projects','projectsinfoimage');
+$myinfohover('blog','bloginfoimage');
+
 ```
 
 ## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
 
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+Some of the major issues I've actually encountered were more on the CSS side of things. Bootstrap had pre-existing CSS Styles written into some elements such as whenever you create links. The links would automatically have a style of making it a blue color, and the link would have a text-decoration of a line that I would want to get rid of. My first encounter with the problem was my only major problem with it. I had tried to change the styles of the div that the link was in, but I did not realize until after experimenting that I had to change the link styles themselves. I wasn't specific enough when I was selecting the div it was in, so the styles wouldn't change. The just became annoying afterwards.
+
+I made an About Me Page where you could hover over certain icons to get to know me better. Each icon would bring out a different text that you could read, and I decided I wanted to add some CSS animation effects to them. I realized that when I was doing transition all, all the effects were effected by it. I had to isolate some effects so that they wouldn't effect others. My problem was that I had a delay on all the effects due to the transition all style I wrote. It would make a button that was suppose to remove the background color delay for a few seconds, which was not my intention. I solved it by just seperating transitions by their own property, and not by just calling all. I was used to doing all because I didn't consider the effect it would have with all the styles, but now I plan on doing it more individually because it's easier to work around incase you want different transition points at different times. 
 
 ## Previous Project Worksheet
  - [Readme's](https://github.com/jkeohan/fewd-class-repo/tree/master/final-project-worksheet/project-worksheet-examples)
