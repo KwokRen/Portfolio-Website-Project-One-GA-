@@ -1,6 +1,5 @@
 # Kwok Ren's Portfolio Website
 
-
 #### Description
 
 Kwok's Website Portfolio is a website I created that let's audiences know who I am as a person and what kind of projects I've made using HTML, CSS, and JavaScript. The website itself is made with HTML, CSS, and JavaScript. Users can scroll down to access links to my GitHub, Linkedin, Blog, and a way to contact me. On the About Me section, you get to know me personally, and what I like to do. This project has allowed me to use my knowledge of HTML, CSS, and JavaScript and create a interactive webpage with it. I intend of updating it as I learn more developer languages and skills. 
