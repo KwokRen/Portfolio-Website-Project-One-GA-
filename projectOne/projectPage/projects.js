@@ -1,3 +1,4 @@
+// this click event listener will allow the hidden menu to display when the hamburger is clicked and will transform the hamburger icon to an X icon.
 let $hamburger = $('.hamburger');
     $hamburger.on('click', function(e) {
     let $hamburgermenu = $('.hamburgermenu');
@@ -6,7 +7,7 @@ let $hamburger = $('.hamburger');
       }
     );  
 
-
+// this event listener listens to the size of the window, and if it's above 600px, the hidden menu will automatically hide.
 $(window).resize (function(e) {
   if ($(window).width() < 600) {
     $('.hamburgermenu').removeClass('shown');
@@ -23,7 +24,7 @@ https://docs.google.com/spreadsheets/d/1xf3bZWfrVyYqUZkGcBGWdIMIEzkqu6rhF1essoyY
 
 const url = 'https://spreadsheets.google.com/feeds/list/1xf3bZWfrVyYqUZkGcBGWdIMIEzkqu6rhF1essoyYCZc/od6/public/values?alt=json';
 
-// Russel Tsang
+// Russel Tsang, a good friend of mine, taught me about intersection observers
 
 let options = {
   root: null,
@@ -106,7 +107,7 @@ const app = (data) => {
 }
 
 // credit to mehrdad dastgir on stack overflow https://stackoverflow.com/questions/15275956/jquery-un-hover
-
+// this event listener listens to when you hover over the divs on the nav bar when it is not in hamburger mode, which changes the color of the text to black.
 const $desktophover = function(name, letter){
   let $name = $(`.${name}`);
   $name.hover(function(){
@@ -119,7 +120,7 @@ const $desktophover = function(name, letter){
 $desktophover('desktopshowA', 'desktopshowhoverA');
 $desktophover('desktopshowB', 'desktopshowhoverB');
 $desktophover('desktopshowC', 'desktopshowhoverC');
-
+// this event listeners listens to when the window loads and gives the class to the div with the class projectsname so it slides up. 
 $(window).on('load', function() {
   $('.projectsname').addClass('projectsnameslide');
 })

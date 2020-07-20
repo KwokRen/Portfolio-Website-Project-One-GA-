@@ -60,7 +60,6 @@ function iconglow (iconname, iconnumber) {
 $(`.${iconname}`).on('click', function () {
   let $class = $('.iconholder');
   $class.each((element) => {
-    console.log($class.eq(element))
       if ($class.eq(element).hasClass(`${iconnumber}`)) {
       $class.eq(element).toggleClass('iconholdertoggle');
     } else {
