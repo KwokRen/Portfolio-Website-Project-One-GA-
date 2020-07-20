@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Titillium+Web&display=swap');
-/* 
-
-* {
-    border: 1px solid gold;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Titillium+Web&display=swap');
 
 .top {
     background-color: #19415C;
@@ -108,7 +103,7 @@
 .aboutname {
     text-align: center;
     font-size: 100px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
     background-color: #19415C;
     color: white;
     padding: 50px 0 50px 0;
@@ -171,7 +166,7 @@
     border: 5px solid #cccccc;
     background-color: #19415C;
     color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .imageskills {
@@ -212,7 +207,7 @@
     font-size: 70px;
     height: 100px;
     padding-top: 20px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
     border-top: 5px solid #cccccc;
 }
 
@@ -224,9 +219,10 @@
     height: 100px;
     background-color: #19415C;
     color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
     border-bottom: 5px solid #cccccc;
     border-top: 5px solid #cccccc;
+    padding-top: 10px;
 }
 
 .aboutmeinfogrid {
@@ -394,7 +390,7 @@ img {
     height: 80px;
     font-size: 20px;
     color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 @media screen and (max-width: 1115px) {

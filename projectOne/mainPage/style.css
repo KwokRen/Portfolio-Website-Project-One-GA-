@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Titillium+Web&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Titillium+Web&display=swap');
 
 /* * {
     border: 1px solid gold;
@@ -111,7 +110,7 @@ html {
 
 #name {
     font-size: 70px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .hamburgermenu {
@@ -202,7 +201,7 @@ html {
 .myinfoheader {
     padding-top: 0px;
     font-size: 40px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
     transform: translate(0px, 500px);
     opacity: 0;
 }
@@ -272,7 +271,7 @@ html {
     font-size: 20px;
     text-align: center;
     width: 100%;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
     background-color: #19415C;
     color: white;
     border-bottom: 5px solid #cccccc;
@@ -353,6 +352,6 @@ textarea {
     height: 80px;
     font-size: 20px;
     color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
     border-top: 5px solid #cccccc;
 }

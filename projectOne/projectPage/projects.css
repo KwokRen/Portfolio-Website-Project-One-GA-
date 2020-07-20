@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Titillium+Web&display=swap');
 
 
 /* * {
@@ -108,7 +108,7 @@
 .projectsname {
     text-align: center;
     font-size: 100px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
     background-color: #19415C;
     color: white;
     padding: 50px 0 50px 0;
@@ -142,7 +142,7 @@ img {
     height: 80px;
     font-size: 20px;
     color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .projectobject {
@@ -191,7 +191,7 @@ img {
 .projectobjecttitle > h2{
     margin-top: -50px;
     font-size: 40px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .projectobjectdescription {
