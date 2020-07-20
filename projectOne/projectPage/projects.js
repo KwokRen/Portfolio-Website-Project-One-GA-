@@ -57,7 +57,8 @@ let observerThree = new IntersectionObserver((entries, observer) => {
 }, options)
 
 // Async code: Code block that activates at a different time (specifically after the non-async code);
-
+// I had to create some jQuery variables within this async block of code because the classes didn't exist beforehand.
+// This fetch function allowed me to take information translated through JSON from a google sheet and implement it to my code. 
 fetch (url)
   .then(response => response.json())
   .then(data => {
@@ -81,6 +82,7 @@ fetch (url)
     })
   })
 
+// using the data provided from the google sheets, I was able to append these objects to my HTML page using jQuery.
 const app = (data) => {
   const createProjectsElement = (project) => {
     const $div = $('<div>').addClass('projectobject');
