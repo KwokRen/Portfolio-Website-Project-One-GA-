@@ -1,7 +1,7 @@
 # Kwok Ren's Portfolio Website
 
-#### ![](https://res.cloudinary.com/dpggcudix/image/upload/v1595181957/Screen_Shot_2020-07-19_at_2.05.17_PM_unzaxv.png)
-#### ![](https://res.cloudinary.com/dpggcudix/image/upload/v1595182011/Screen_Shot_2020-07-19_at_2.06.37_PM_sl2oqo.png)
+#### ![](https://res.cloudinary.com/dpggcudix/image/upload/v1595252586/Screen_Shot_2020-07-20_at_9.42.24_AM_fcjyvw.png)
+#### ![](https://res.cloudinary.com/dpggcudix/image/upload/v1595252586/Screen_Shot_2020-07-20_at_9.42.39_AM_jxgne2.png)
 
 [Kwok's Website Portfolio](https://kwokren.github.io/project-1-portfolio/projectOne/mainPage/)
 
