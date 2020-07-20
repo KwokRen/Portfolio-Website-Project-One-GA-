@@ -27,7 +27,7 @@
                 <!-- The div container that contains my icon within the navigation bar. -->
                 <div class="icon">
                     <!-- Linking back to the homepage. -->
-                    <a href="index.html">
+                    <a href="../mainPage/index.html">
                         <!-- The link that produces the image that has my icon. -->
                         <img src="https://res.cloudinary.com/dpggcudix/image/upload/v1594787116/Screen_Shot_2020-07-15_at_12.24.48_AM_hx3b2v.png" class="iconpic">
                     </a>
@@ -42,17 +42,17 @@
                     <div class="rightside">
                         <!-- I put the a tags around the div container so that the whole div will become the link instead of just the word. -->
                         <!-- Each of these links go to different webpages in the same folder. -->
-                        <a href="../mainPage/index.html" id="desktopshowhoverA"><div class="desktopshowA">Home</div></a>
-                        <a href="../aboutPage/about.html" id="desktopshowhoverB"><div class="desktopshowB">About</div></a>
-                        <a href="../projectPage/projects.html" id="desktopshowhoverC"><div class="desktopshowC">Projects</div></a>
+                        <a href="../aboutPage/about.html" id="desktopshowhoverB"><div class="desktopshowA">About</div></a>
+                        <a href="../projectPage/projects.html" id="desktopshowhoverC"><div class="desktopshowB">Projects</div></a>
+                        <a href="../mainPage/index.html#contacts" id="desktopshowhoverA"><div class="desktopshowC">Contact</div></a>
                     </div>
                 <div>
             </nav>
             <!-- The class hidden is given to them because they are hidden and will only appear when they are given the class shown (which is on line 1 of the JavaScript file). -->
             <div class="hamburgermenu">
-                <a href="../mainPage/index.html"><div class="hidden">Home</div></a>
                 <a href="../aboutPage/about.html"><div class="hidden">About</div></a>
                 <a href="../projectPage/projects.html"><div class="hidden">Projects</div></a>
+                <a href="../mainPage/index.html#contacts"><div class="hidden">Contact</div></a>
             </div>
             <!-- The container that holds the banner section of the about me page. It also holds the actual about me section, my interests section, and my skills section. -->
             <div class="aboutbanner">
@@ -81,6 +81,7 @@
                     <div class="aboutmepara interests">
                         <!-- Heading to describe the topic. The topic in this case is about my interests. -->
                         <h1>Interests</h1>
+                        <!-- The div container here is created by using Grid, and it allows me to split up the icons onto both sides and the text paragraphs in the middle. -->
                         <div class="interestsgrid">
                             <div class="icons">
                                 <div class="iconholder iconOne"><img class="leader icontoggle" src="https://image.flaticon.com/icons/svg/860/860454.svg"></div>
