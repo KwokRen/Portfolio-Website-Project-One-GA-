@@ -95,7 +95,7 @@
     }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 600px) {
 
     .hamburger::before {
         content: '\2630';
