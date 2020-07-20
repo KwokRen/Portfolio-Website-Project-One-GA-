@@ -70,8 +70,8 @@ $picturehover.hover(function() {
   $rightherobanner.css('text-shadow','none');
 });
 
-let slidinglink = document.querySelector('.sliding-link');
-slidinglink.addEventListener('click',function() {
+let connectlink = document.querySelector('#desktopshowhoverC');
+connectlink.addEventListener('click',function() {
   let connect = document.querySelector('.connect');
   let distance = window.pageYOffset + connect.getBoundingClientRect().top;
   window.scrollTo(0, distance);

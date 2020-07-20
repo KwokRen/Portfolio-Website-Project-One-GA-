@@ -40,10 +40,14 @@
                     <div class="hamburgerdiv">
                         <a class="hamburger" href="#"></a>
                     </div>
+                    <!-- The right side div container that holds all the different links together that appears when width is more than or equal to 600px-->
                     <div class="rightside">
-                        <a href="../aboutPage/about.html" id="desktopshowhoverA"><div class="desktopshow desktopshowA">About</div></a>
-                        <a href="../projectPage/projects.html" id="desktopshowhoverB"><div class="desktopshow desktopshowB">Projects</div></a>
-                        <a href="#" class="sliding-link" id="desktopshowhoverC"><div class="desktopshow desktopshowC">Contact</div></a>
+                        <!-- I put the a tags around the div container so that the whole div will become the link instead of just the word -->
+                        <!-- Each of these links go to different webpages in the same folder except for the last one -->
+                        <a href="../aboutPage/about.html" id="desktopshowhoverA"><div class="desktopshowA">About</div></a>
+                        <a href="../projectPage/projects.html" id="desktopshowhoverB"><div class="desktopshowB">Projects</div></a>
+                        <!-- This link through jQuery line 73 goes to the bottom of the page where my contact information form is located instead -->
+                        <a href="#" id="desktopshowhoverC"><div class="desktopshowC">Contact</div></a>
                     </div>
                 <div>
             </nav>
