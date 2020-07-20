@@ -114,26 +114,28 @@
                 </div>
             </div>
         </div>
+        <!-- The bottom portion of my home page. This section includes the contact form and the footer. -->
         <div class="end">
+            <!-- This container has divs that represent my form. It's where people are suppose to connect with me, but for now it is not operational because I cannot recieve responses yet. Instead, there is a link for the google form. -->
             <div class="connect">
-                <p><strike>Connect With Me</strike><br>Under Construction: Please click <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeewiDiact5mUB4I6DjqnMzkRQLkCGhyMfSAY6SLN4StxBD5A/viewform?usp=sf_link">here</a> to fill out the google form.</p>
-                
+                <!-- I made a strikethrough because you can't really connect with me yet on this site. Instead, I provide a link to a google form people can fill out in the meantime. -->
+                <p><strike>Connect With Me</strike><br>Under Construction: Please click <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeewiDiact5mUB4I6DjqnMzkRQLkCGhyMfSAY6SLN4StxBD5A/viewform?usp=sf_link">here</a> to fill out the google form.</p>   
             </div>
+            <!-- The actual form itself, and will be used when I can recieve responses from people. It includes input divs and a textarea div. -->
             <form>
-                <div class="outerformdiv">
-                    <div class="formdiv" id="contacts">
-                        <div>
-                            <input type="text" id="fullname" name="fullname" placeholder="Name"></input>
-                        </div>
-                        <div>
-                            <input type="text" id="email" name="email" placeholder="Email"></input>
-                        </div>
-                        <div>
-                            <textarea id="message" name="message" placeholder="Message" rows="5" cols="10" wrap="soft"></textarea>
-                        </div>
-                        <div class="divformbutton">
-                        <button class="formbutton"><strike>Submit</strike></button>
-                        </div>
+                <!-- ID is given here so that it can be linked with links on top to navigate down to this section as quickly as possible. -->
+                <div class="formdiv" id="contacts">
+                    <div>
+                        <input type="text" id="fullname" name="fullname" placeholder="Name"></input>
+                    </div>
+                    <div>
+                        <input type="text" id="email" name="email" placeholder="Email"></input>
+                    </div>
+                    <div>
+                        <textarea id="message" name="message" placeholder="Message" rows="5" cols="10" wrap="soft"></textarea>
+                    </div>
+                    <div class="divformbutton">
+                    <button class="formbutton"><strike>Submit</strike></button>
                     </div>
                 </div>
             </form>
