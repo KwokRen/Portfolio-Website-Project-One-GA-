@@ -24,9 +24,9 @@
     <main>
         <!-- The top part of my webpage -->
         <div class="top">
-            <!-- Div container that contains my navigation bar -->
+            <!-- The div container that contains my navigation bar. I used flexbox for this because it allows me to manuever the divs inside of it in a better way. -->
             <nav class="navbartop">
-                <!-- Div that contains my icon within the navigation bar -->
+                <!-- The div container that contains my icon within the navigation bar -->
                 <div class="icon">
                     <!-- Linking back to the homepage -->
                     <a href="index.html">
@@ -46,16 +46,19 @@
                         <!-- Each of these links go to different webpages in the same folder except for the last one -->
                         <a href="../aboutPage/about.html" id="desktopshowhoverA"><div class="desktopshowA">About</div></a>
                         <a href="../projectPage/projects.html" id="desktopshowhoverB"><div class="desktopshowB">Projects</div></a>
-                        <!-- This link through jQuery line 73 goes to the bottom of the page where my contact information form is located instead -->
+                        <!-- This link through jQuery (which is line 73 of the JavaScript file) goes to the bottom of the page where my contact information form is located instead -->
                         <a href="#" id="desktopshowhoverC"><div class="desktopshowC">Contact</div></a>
                     </div>
                 <div>
             </nav>
+            <!-- This is the container that the hamburger menu displays. Before the hamburger menu is clicked, it is not displaying. -->
             <div class="hamburgermenu">
+                <!-- The class hidden is given to them because they are hidden and will only appear when they are given the class shown (which is on line 1 of the JavaScript file). -->
                 <a href="../aboutPage/about.html"><div class="hidden">About</div></a>
                 <a href="../projectPage/projects.html"><div class="hidden">Projects</div></a>
                 <a href="#contacts"><div class="hidden">Contact</div></a>
             </div>
+            <!-- This is the container that holds the divs within my hero banner. -->
             <div class="herobanner">
                 <div class="leftherobanner">
                     <div class="profilepic"></div>
