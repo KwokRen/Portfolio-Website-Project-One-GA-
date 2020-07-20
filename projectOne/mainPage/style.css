@@ -73,7 +73,7 @@ html {
     background-image: url(https://res.cloudinary.com/dpggcudix/image/upload/v1594673961/14468470_10205441350272768_2286379399799910053_o_jyqoqc.jpg) ;
     background-size: cover;
     border-radius: 50%;
-    transition: box-shadow 0.6s ease-in-out;
+    transition: box-shadow 1s ease-in-out;
 }
 
 .slide {
@@ -87,7 +87,7 @@ html {
     display: flex;
     width: 40%;
     align-items: center;
-    transition: all 0.6s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .profilepic:hover {
@@ -247,6 +247,7 @@ html {
 .myinfobutton:hover {
     box-shadow: 0px 0px 15px rgb(219,244,255,1);
     transform: scale(1.1);
+    transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
 }
 
 .end {
