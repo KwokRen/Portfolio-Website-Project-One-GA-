@@ -94,7 +94,7 @@ The functionality will then be divided into two separate lists: MVP and PostMVP.
 - Clean and simple layout
 - Play around with different transitions
 - Work on Hovering over features
-- 
+
 ## Functional Components
 
 Based on the initial logic defined in the previous sections try and breakdown the logic further into functional components, and by that we mean functions.  Try and capture what logic would need to be defined if the game was broken down into the following categories.
