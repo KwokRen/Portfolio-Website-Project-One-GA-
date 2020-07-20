@@ -1,3 +1,5 @@
+
+// this click event listener will allow the hidden menu to display when the hamburger is clicked and will transform the hamburger icon to an X icon.
 let $hamburger = $('.hamburger');
     $hamburger.on('click', function(e) {
     let $hamburgermenu = $('.hamburgermenu');
@@ -6,7 +8,7 @@ let $hamburger = $('.hamburger');
       }
     );  
 
-
+// this event listener listens to the size of the window, and if it's above 600px, the hidden menu will automatically hide.
 $(window).resize (function(e) {
   if ($(window).width() < 600) {
     $('.hamburgermenu').removeClass('shown');
@@ -14,7 +16,7 @@ $(window).resize (function(e) {
 });
 
 // credit to mehrdad dastgir on stack overflow https://stackoverflow.com/questions/15275956/jquery-un-hover
-
+// this event listener listens to when you hover over the divs on the nav bar when it is not in hamburger mode, which changes the color of the text to black.
 const $desktophover = function(name, letter){
   let $name = $(`.${name}`);
   $name.hover(function(){
@@ -28,15 +30,17 @@ $desktophover('desktopshowA', 'desktopshowhoverA');
 $desktophover('desktopshowB', 'desktopshowhoverB');
 $desktophover('desktopshowC', 'desktopshowhoverC');
 
+// when the window loads in, this event listener will add a class that will let the name of the hero banner slide in. 
 $(window).on('load', function() {
   $('.aboutname').addClass('aboutnameslide');
 })
 
+// appending a text to the div with the class name interestspara.
 function interestsparagraph(para) {
   let $interestspara = $('.interestspara');
   $interestspara.text(para);
 }
-
+// based on which icon was clicked (which has a distinguished class name), the text will appear
 function showtext (name, text) {
 const $name = $(`.${name}`);
 $name.on('click', function() {
@@ -51,6 +55,7 @@ showtext('basketball','Basketball is my favorite sport to watch. It’s the only
 showtext('food','I love food. All types of food. Everything about food is great. The taste, the culture, and the people you eat it with. One of my favorite types of food is Korean Food. Korean food are known to be spicy. Ever since I was a little kid, my dad would build up my spice tolerance, and now I can pretty much handle anything spicy. One of my favorite dishes to get (especially in summer) is the cold noodles dish. The broth is amazing and it’s perfect for hot weather. Another favorite dish that I can go on about is sushi. I will never get tired of sushi. Spicy salmon is to die for. I would always go with my friends to all you can eat sushi buffets, and even though they aren’t the best quality sushi, it’s always a great time figuring out how to finish the last piece because we always over order.');
 showtext('travel','I’ve lived my entire life in NYC. I always found myself wanting to go out and explore more because even though the city was never getting boring, it was sure getting repetitive. I recently went on a trip to Philidelphia last December around Christmas time, and I loved just being in an area I’ve never been to before. Exploring different places, feeling lost, and eating amazing food was a splendid feeling that I still yearn for today. I can’t wait to explore other places to learn about the culture, the social life there, and of course the food. There are so many places I’ve never been to in the states, and I have yet to even consider going international yet.');
 
+// when one icon glows up indicating you clicked on it, the other ones will not. 
 function iconglow (iconname, iconnumber) {
 $(`.${iconname}`).on('click', function () {
   let $class = $('.iconholder');
@@ -72,12 +77,15 @@ iconglow('basketball','iconFour');
 iconglow('food','iconFive');
 iconglow('travel','iconSix');
 
+
+// interesection observers
 let options = {
   root: null,
   rootMargin: '0%',
   threshold: 0
 }
 
+// about me will slide up when the screen is intersecting with the top of the div that contains the about me content
 let observerOne = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting) {
@@ -90,6 +98,7 @@ let targetOne = document.querySelector('.aboutmeinfo');
 
 observerOne.observe(targetOne);
 
+// interests will slide up when the screen is intersecting with the top of the div that contains the interests content
 let observerTwo = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting) {
@@ -102,6 +111,7 @@ let targetTwo = document.querySelector('.interests');
 
 observerTwo.observe(targetTwo);
 
+// skills will slide up when the screen is intersecting with the top of the div that contains the skills content
 let observerThree = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting) {
@@ -119,7 +129,7 @@ let optionsTwo = {
   rootMargin: '0%',
   threshold: 0.5
 }
-
+// icons will come into the interests div when the screen is intersecting with the interests div at 50% 
 let observerFour = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting) {
