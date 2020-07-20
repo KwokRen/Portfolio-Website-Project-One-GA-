@@ -74,7 +74,7 @@
     text-shadow: 0px 0px 7px rgb(26,65,92,1);
 }
 
-.desktopshow {
+.desktopshowA, .desktopshowB, .desktopshowC {
     padding: 12px;
     transition: all 0.2s ease-in-out;
 }
@@ -84,7 +84,7 @@
     text-decoration: none;
 }
 
-.desktopshow:hover {
+.desktopshowA:hover, .desktopshowB:hover, .desktopshowC:hover {
     border-radius: 100px;
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
     background-color: #dbf5ff;
