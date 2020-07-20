@@ -39,13 +39,34 @@
     justify-content: space-between;
 }
 
+.rightside > a {
+    color: white;
+    text-decoration: none;
+}
+
+.desktopshowA, .desktopshowB, .desktopshowC {
+    padding: 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+.desktopshowA:hover, .desktopshowB:hover, .desktopshowC:hover {
+    border-radius: 100px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
+    background-color: #dbf5ff;
+    transform: scale(1.1);
+}
+
 .hamburgermenu {
     height: 0px;
     width: 100%;
     background-color: #19415C;
     color: black;
     display: none;
+}
 
+.hamburgermenu > a {
+    color: white;
+    text-decoration: none;
 }
 
 .hidden {
@@ -57,34 +78,11 @@
     color: white;
 }
 
-.hamburgermenu > a {
-    color: white;
-    text-decoration: none;
-}
-
 .hidden:hover {
     background-color: #dbf5ff;
     color: black;
     text-shadow: 0px 0px 7px rgb(26,65,92,1);
 }
-
-.desktopshowA, .desktopshowB, .desktopshowC {
-    padding: 12px;
-    transition: all 0.2s ease-in-out;
-}
-
-.rightside > a {
-    color: white;
-    text-decoration: none;
-}
-
-.desktopshowA:hover, .desktopshowB:hover, .desktopshowC:hover {
-    border-radius: 100px;
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
-    background-color: #dbf5ff;
-    transform: scale(1.1);
-  }
-
 
 .aboutbanner {
     height: 2900px;
@@ -400,7 +398,7 @@ img {
         height: 300px;
     }
 
-    .aboutmetext, .mission{
+    .aboutmetext, .mission, .interestspara {
         font-size: 16px;
     }
 
@@ -418,10 +416,6 @@ img {
     img {
         width: 90px;
         height: 90px;
-    }
-
-    .interestspara {
-        font-size: 16px;
     }
     
 }

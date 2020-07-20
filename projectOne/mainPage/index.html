@@ -4,48 +4,48 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kwok Ren - Developer</title>
-        <!-- Setting up the icon for the tab -->
+        <!-- Setting up the icon for the tab. -->
         <link rel="icon" href="https://res.cloudinary.com/dpggcudix/image/upload/v1595128733/Screen_Shot_2020-07-18_at_11.18.39_PM_uhfkve.png">
-        <!-- Link to bootstrap CSS library -->
+        <!-- Link to bootstrap CSS library. -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <!-- Link to jQuery library -->
+        <!-- Link to jQuery library. -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer></script>
-        <!-- Link to bootstrap JavaScript library -->
+        <!-- Link to bootstrap JavaScript library. -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous" defer></script>
-        <!-- Link to Font Awesome's Github and Linkedin Icons -->
+        <!-- Link to Font Awesome's Github and Linkedin Icons. -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Link to the CSS (both media and regular) -->
+        <!-- Link to the CSS (both media and regular). -->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="media.css">
-        <!-- Link to the JavaScript file -->
+        <!-- Link to the JavaScript file. -->
         <script src="app.js" defer></script>
     </head>
     <body>
-        <!-- The top part of my webpage -->
+        <!-- The top part of my webpage. -->
         <div class="top">
             <!-- The div container that contains my navigation bar. I used flexbox for this because it allows me to manuever the divs inside of it in a better way. -->
             <nav class="navbartop">
-                <!-- The div container that contains my icon within the navigation bar -->
+                <!-- The div container that contains my icon within the navigation bar. -->
                 <div class="icon">
-                    <!-- Linking back to the homepage -->
+                    <!-- Linking back to the homepage. -->
                     <a href="index.html">
-                        <!-- The link that produces the image that has my icon -->
+                        <!-- The link that produces the image that has my icon. -->
                         <img src="https://res.cloudinary.com/dpggcudix/image/upload/v1594787116/Screen_Shot_2020-07-15_at_12.24.48_AM_hx3b2v.png" class="iconpic">
                     </a>
                 </div>
-                <!-- The right part of my navigation bar -->
+                <!-- The right part of my navigation bar. -->
                 <div class="rightsidetop">
-                    <!-- My hamburger div that appears only when width is less than 600px -->
+                    <!-- My hamburger div that appears only when width is less than 600px. -->
                     <div class="hamburgerdiv">
                         <a class="hamburger" href="#"></a>
                     </div>
-                    <!-- The right side div container that holds all the different links together that appears when width is more than or equal to 600px-->
+                    <!-- The right side div container that holds all the different links together that appears when width is more than or equal to 600px. -->
                     <div class="rightside">
-                        <!-- I put the a tags around the div container so that the whole div will become the link instead of just the word -->
-                        <!-- Each of these links go to different webpages in the same folder except for the last one -->
+                        <!-- I put the a tags around the div container so that the whole div will become the link instead of just the word. -->
+                        <!-- Each of these links go to different webpages in the same folder except for the last one. -->
                         <a href="../aboutPage/about.html" id="desktopshowhoverA"><div class="desktopshowA">About</div></a>
                         <a href="../projectPage/projects.html" id="desktopshowhoverB"><div class="desktopshowB">Projects</div></a>
-                        <!-- This link through jQuery (which is line 73 of the JavaScript file) goes to the bottom of the page where my contact information form is located instead -->
+                        <!-- This link through jQuery (which is line 73 of the JavaScript file) goes to the bottom of the page where my contact information form is located instead. -->
                         <a href="#" id="desktopshowhoverC"><div class="desktopshowC">Contact</div></a>
                     </div>
                 <div>
@@ -76,7 +76,7 @@
             <!-- All of these containers within this container (created by CSS Grid) will be equal in size. -->
             <div class="myinfo">
                 <!-- This container will have information that links to my about me page. -->
-                <!-- The child elements in this div container contain multiple classes because jQuery purposes. (See line 90).-->
+                <!-- The child elements in this div container contain multiple classes because jQuery purposes. (See line 90). -->
                 <div class="about">
                     <!-- An icon that shows a human figure that represents a person. The purpose of this image is to show the readers this section is about me as a person. This icon was found on iconfinder. -->
                     <img class="myinfoimage aboutinfoimage" src="https://cdn4.iconfinder.com/data/icons/basic-ui-2-line/32/person-people-man-profile-human-256.png">
@@ -88,11 +88,11 @@
                     <a href="../aboutPage/about.html" class="aboutlink"><button class="myinfobutton aboutbutton">About</button></a>
                 </div>
                 <!-- This container will have information that links to my projects page. -->
-                <!-- The child elements in this div container contain multiple classes because jQuery purposes. (See line 90).-->
+                <!-- The child elements in this div container contain multiple classes because jQuery purposes. (See line 90). -->
                 <div class="projects">
                     <!-- An icon that shows a picture of a folder. The folder is suppose to represent the projects that I have. -->
                     <img class="myinfoimage projectsinfoimage" src="https://cdn2.iconfinder.com/data/icons/files-folders-3/24/files-folders-26-256.png">
-                    <!-- My header that lets users know what is the topic of this container. The topic is Projects.  -->
+                    <!-- My header that lets users know what is the topic of this container. The topic is Projects. -->
                     <p class="myinfoheader myinfoheaderprojects">PROJECTS</p>
                     <!-- My paragraph that gives a little intro to what this button link goes to. -->
                     <p class="myinfopara myinfoparaprojects">Look at some of my projects that I have worked on. You can check the applications out.</p>
@@ -100,11 +100,11 @@
                     <a href="../projectPage/projects.html" class="projectslink"><button class="myinfobutton projectsbutton">Projects</button></a>
                 </div>
                 <!-- This container will have information that links to my Wordpress blog website. -->
-                <!-- The child elements in this div container contain multiple classes because jQuery purposes. (See line 90).-->
+                <!-- The child elements in this div container contain multiple classes because jQuery purposes. (See line 90). -->
                 <div class="blog">
                     <!-- An icon that shows a picture of a newspaper. The newspaper is suppose to represent new articles or blogposts that I have on my blog. -->
                     <img class="myinfoimage bloginfoimage" src="https://cdn2.iconfinder.com/data/icons/miscellaneous-31/60/newspaper-256.png">
-                    <!-- My header that lets users know what is the topic of this container. The topic is my Blog.-->
+                    <!-- My header that lets users know what is the topic of this container. The topic is my Blog. -->
                     <p class="myinfoheader myinfoheaderblog">BLOG</p>
                     <!-- My paragraph that gives a little intro to what this button link goes to. -->
                     <p class="myinfopara myinfoparablog">Follow me on my journey to becoming a software engineer. Right from the very first day of bootcamp.</p>

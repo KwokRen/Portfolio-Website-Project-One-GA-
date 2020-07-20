@@ -136,3 +136,5 @@ let observerFour = new IntersectionObserver((entries, observer) => {
 let targetFour = document.querySelector('.interests');
 
 observerFour.observe(targetFour)
+
+
