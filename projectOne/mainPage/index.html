@@ -124,21 +124,20 @@
             <!-- The actual form itself, and will be used when I can recieve responses from people. It includes input divs and a textarea div. -->
             <form>
                 <!-- ID is given here so that it can be linked with links on top to navigate down to this section as quickly as possible. -->
-                <div class="formdiv" id="contacts">
-                    <div>
+                <div id="contacts">
+                    <!-- Inputs where people can place their name. -->
                         <input type="text" id="fullname" name="fullname" placeholder="Name"></input>
-                    </div>
-                    <div>
+                        <!-- Inputs where people can place their email. -->
                         <input type="text" id="email" name="email" placeholder="Email"></input>
-                    </div>
-                    <div>
+                    <!-- Text area is different than input because it allows the user to wrap around the box instead of continuing. -->
                         <textarea id="message" name="message" placeholder="Message" rows="5" cols="10" wrap="soft"></textarea>
-                    </div>
                     <div class="divformbutton">
-                    <button class="formbutton"><strike>Submit</strike></button>
+                        <!-- Added a strike through to the word because you can't submit it yet. Will link back to the top of the page. -->
+                        <button class="formbutton"><strike>Submit</strike></button>
                     </div>
                 </div>
             </form>
+            <!-- -->
             <div class="githubandlinkedin">
                 <a target="_blank" href="https://www.linkedin.com/" target="_blank" class="fa fa-linkedin-square"></a>
                 <a target="_blank" href="https://github.com/KwokRen" target="_blank"><i class="fa fa-github"></i></a>
