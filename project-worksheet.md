@@ -138,7 +138,7 @@ Font Awesome: I used some Font Awesome icons to display on the page and have the
 
 ## Code Snippet
 
-On my homepage, I wanted some icons to glow up when I hovered over the div that it was in. At first, I tried to find whether box-shadow or text-shadow would help me out, but neither of them did. I went on Google and searched to see if there was any way I could make icons glow up, and it took me to a person explaining you could on Stack Overflow. He explained that if the Icon was transparent (which I made sure was the case), I would be able to give the icons a filter with a drop shadow that would give a shadow perception very similar to how box-shadow and text-shadow worked. I tried it, and I thought it was super dope that I could make icons glow up. One of the more aesthetically pleasing CSS styles out there that I've learned throughout working on this project. 
+On my homepage, I wanted some icons to glow up when I hovered over the div that it was in. At first, I tried to find whether box-shadow or text-shadow would help me out, but neither of them did. I went on Google and searched to see if there was any way I could make icons glow up, and it took me to a person explaining you could on Stack Overflow. He explained that if the Icon was transparent (which I made sure was the case), I would be able to give the icons a filter with a drop shadow that would give a shadow perception very similar to how box-shadow and text-shadow worked. I tried it, and I thought it was cool that I could make icons glow up. One of the more aesthetically pleasing CSS styles out there that I've learned throughout working on this project. 
 
 ```
 const $myinfohover = function(name, image, button) {
