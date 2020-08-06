@@ -91,7 +91,7 @@
 }
 
 .projectsbanner {
-    height: 3250px;
+    height: 4150px;
     box-sizing: border-box;
     background-color: #dbf5ff;
 }
@@ -168,7 +168,7 @@ img {
     padding-left: 40px;
 }
 
-.projectobject:nth-child(2) {
+.projectobject:nth-child(2), .projectobject:nth-child(4) {
     display: flex;
     width: 100%;
     justify-content: right;
@@ -238,7 +238,7 @@ img {
 @media screen and (max-width: 900px) {
 
     .projectsbanner {
-        height: 3900px;
+        height: 4900px;
     }
 
     .projectobject {
@@ -256,7 +256,7 @@ img {
         padding-right: 40px;
     }
 
-    .projectobject:nth-child(2) {
+    .projectobject:nth-child(2), .projectobject:nth-child(4) {
         flex-direction: column;
         padding-left: 40px;
         align-items: center;
@@ -367,7 +367,7 @@ img {
     }
 
     .projectsbanner {
-        height: 3500px;
+        height: 4500px;
     }
 
     .projectobject {
@@ -399,7 +399,7 @@ img {
     }
 
     .projectsbanner {
-        height: 3300px;
+        height: 4300px;
     }
 
     img {

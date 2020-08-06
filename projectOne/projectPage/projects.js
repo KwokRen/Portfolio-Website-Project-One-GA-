@@ -56,6 +56,14 @@ let observerThree = new IntersectionObserver((entries, observer) => {
   })
 }, options)
 
+let observerFour = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      document.querySelectorAll('.projectobject')[3].classList.add('divslideup');
+    }
+  })
+}, options)
+
 // Async code: Code block that activates at a different time (specifically after the non-async code);
 // I had to create some jQuery variables within this async block of code because the classes didn't exist beforehand.
 // This fetch function allowed me to take information translated through JSON from a google sheet and implement it to my code. 
@@ -74,9 +82,11 @@ fetch (url)
     let targetOne = document.querySelectorAll('.projectobject')[0];
     let targetTwo = document.querySelectorAll('.projectobject')[1];
     let targetThree = document.querySelectorAll('.projectobject')[2];
+    let targetFour = document.querySelectorAll('.projectobject')[3];
     observerOne.observe(targetOne);
     observerTwo.observe(targetTwo);
     observerThree.observe(targetThree);
+    observerFour.observe(targetFour);
     $('.projectobjectlink').hover(function() {
       $('.projectobjectlink').toggleClass('linkhover');
     })
