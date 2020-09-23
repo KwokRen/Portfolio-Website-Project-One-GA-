@@ -145,15 +145,19 @@
 }
 
 .skillspic {
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 500px;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
 }
 
 .currentskills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     grid-area: 1/1/2/2;
-    border-right: 1px solid #cccccc;
+    width: 80%;
 }
 
 .futureskills {
@@ -169,6 +173,7 @@
     background-color: #19415C;
     color: white;
     font-family: 'Fjalla One', sans-serif;
+    width: 90%;
 }
 
 .imageskills {
